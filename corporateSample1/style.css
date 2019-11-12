@@ -40,6 +40,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 a:hover { 
   transition: .3s;
   opacity: 0.6;
@@ -191,17 +192,15 @@ section {
 }
 
 .news li {
+  position: relative;
   border-bottom: dotted 1px #dedede;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
-.news li a {
+.news li h3 {
   color: #333333;
-}
-
-.news li a:hover {
-  opacity: 0.6;
+  font-weight: 100;
 }
 
 .news li time {
@@ -209,6 +208,25 @@ section {
   color: #949494;
   padding-right: 0px;
   margin-right: 80px;
+}
+
+.news-list-item span {
+  position:absolute;
+  top:25px;
+  right: 20px;
+  color:#ccc;
+  font-size:1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+
+.news-content {
+  font-size: 1rem;
+  display: none;
+  padding: 0;
+  margin-left: 13%;
+  color: #949494;
 }
 
 /*========= recruit ===========*/
@@ -243,6 +261,12 @@ section {
   background-color: rgba(255,255,255,0.6);
   line-height: 60px;
   text-align: center;
+  cursor: pointer;
+}
+
+.recruit h2 span:hover {
+  background-color: rgba(255,255,255,0.4);
+  transition: .3s;
 }
 
 .recruit::after {
@@ -254,6 +278,74 @@ section {
   top: -20%;
   right: 0;
   z-index: -1;
+}
+
+/*========= Modal ===========*/
+
+.submit-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e8e7e7;
+  padding: 20px 0 40px;
+  border-radius: 5px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times-circle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#submit-form {
+  width: 100%;
+}
+
+#submit-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#submit-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: rgba(128, 128, 128, 1);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: rgba(128, 128, 128, 0.8);
+  transition: .3s;
 }
 
 /*========= footer ===========*/
