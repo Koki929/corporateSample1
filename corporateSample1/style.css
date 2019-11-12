@@ -234,7 +234,7 @@ section {
   background-color: rgba(0,0,0,0.2);
 }
 
-.recruit h2 a {
+.recruit h2 span {
   position: absolute;
   top: 45%;
   right: 52%;
@@ -254,4 +254,34 @@ section {
   top: -20%;
   right: 0;
   z-index: -1;
+}
+
+/*========= footer ===========*/
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.address p {
+  line-height: 1.8;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 50px;
+}
+
+.copylight p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 100px;
+  color: #333;
+  background-color: #e8e7e7;
 }
