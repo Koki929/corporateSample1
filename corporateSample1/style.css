@@ -210,3 +210,48 @@ section {
   padding-right: 0px;
   margin-right: 80px;
 }
+
+/*========= recruit ===========*/
+
+.recruit {
+  position: relative;
+}
+
+.recruit-img img {
+  width: 80%;
+  height: 400px;
+  margin-right: 20%;
+  object-fit: cover;
+}
+
+.recruit-img::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.recruit h2 a {
+  position: absolute;
+  top: 45%;
+  right: 52%;
+  width: 250px;
+  height: 60px;
+  background-color: rgba(255,255,255,0.6);
+  line-height: 60px;
+  text-align: center;
+}
+
+.recruit::after {
+  content: "";
+  position: absolute;
+  background: #e8e7e7;
+  height: 400px;
+  width: 45%;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
